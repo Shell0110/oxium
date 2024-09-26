@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /error/301.html
+Disallow: /error/302.html
+Disallow: /error/304.html
+Disallow: /error/400.html
+Disallow: /error/401.html
+Disallow: /error/401.html
+Disallow: /error/403.html
+Disallow: /error/404.html
+Disallow: /error/405.html
+Disallow: /error/408.html
+Disallow: /error/429.html
+Disallow: /error/451.html
+Disallow: /error/500.html
+
+allow: /index.html
+allow: /
+allow: /staff/index.html
+allow: /oxium/index.html
+allow: /actualite/index.html
+allow: /actualite/article/alpha.html
+
+
+sitemap: https://oxium.ddns.net/sitemap.xml

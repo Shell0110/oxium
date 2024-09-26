@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/Logo 1.png">
+    
+    
+    <!-- Title -->
+    <title>OXIUM</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Découvrez Oxium, le meilleur clicker game pour collecter de l'oxium et grimper au classement. Profitez de saisons thématiques et défiez vos amis pour des bonus excitants. Jouez maintenant!">
+    <meta property="og:title" content="OXIUM">
+    <meta property="og:description" content="Plongez dans l'univers d'Oxium, le clicker game ultime pour accumuler de l'oxium et conquérir le classement. Défiez vos amis, profitez de saisons palpitantes et remportez des bonus époustouflants. Lancez-vous dès maintenant!">
+    <meta property="og:url" content="https://oxium.ddns.net/oxium/index.html">
+    <meta property="og:img" content="assets/Logo 1.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OXIUM | GAME">
+    <meta property="og:local" content="fr-FR">
+    
+
+    <!-- Cookie Consent-->
+    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({"notice_banner_type":"footerline","consent_type":"express","palette":"light","language":"fr","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false});
+    });
+    </script>
+    
+
+</head>
+
+
+<body>
+
+
+
+    <div class="navbar">
+        <button onclick="ShowClicker()"><img src="../assets/icon/home.svg" alt="Home"></button>
+        <button onclick="ShowShop()"><img src="../assets/icon/shopping-cart.svg" alt="Shop"></button>
+        <button onclick="ShowStat()"><img src="../assets/icon/statistique.svg" alt="Statistique"></button>
+        <button onclick="ShowProfil()"><img src="../assets/icon/user.svg" alt="Profile"></button>
+        
+      </div>
+    
+   
+
+    <!-- Clicker -->
+
+    <div id="page-clicker">
+
+
+    <section class="center">
+
+            <div class="top">
+                <h2>Clicker</h2>
+            </div>
+
+            <button onclick="Clicker()" class="btn-clicker"><img src="/assets/oxium.jpeg"></button>
+
+            <div class="flex-clicker">
+                <p id="coins-main">Coins: 0</p>
+                <p id="multi-main">Par clique: 1</p>
+            </div>
+
+    </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Shop -->
+
+    <div id="page-shop">
+
+
+        
+        <section class="center">
+
+            <div class="top">
+                <h2>Shop</h2>
+                <p id="coins-shop">Coins: 0</p>
+            </div>
+
+            <!-- Shop -->
+
+            <div class="flex-shop">
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Fusion</h1>
+                        <p id="fusion-price">Prix : 1k</p>
+                        <p>Par clique +1</p>
+                        <p id="fusion-have">Vous en avez : 0</p>
+                        <button onclick="FunFusion()">Acheter</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Electron</h1>
+                        <p id="electron-price">Prix : 5k</p>
+                        <p>Par clique +2</p>
+                        <p id="electron-have">Vous en avez : 0</p>
+                        <button onclick="FunElectron()">Acheter</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Neutron</h1>
+                        <p id="neutron-price">Prix : 15k</p>
+                        <p>Par clique +5</p>
+                        <p id="neutron-have">Vous en avez : 0</p>
+                        <button onclick="FunNeutron()">Acheter</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Proton</h1>
+                        <p id="proton-price">Prix : 25k</p>
+                        <p>Par clique +7</p>
+                        <p id="proton-have">Vous en avez : 0</p>
+                        <button onclick="FunProton()">Acheter</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Photon</h1>
+                        <p id="photon-price">Prix : 50k</p>
+                        <p>Par clique +10</p>
+                        <p id="photon-have">Vous en avez : 0</p>
+                        <button onclick="FunPhoton()">Acheter</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="alertDiv" class="hidden">Vous n'avez pas assez d'argent</div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- PAGE STAT -->
+
+    <div class="page-stat" id="page-stat">
+        
+        <div class="top">
+            <h2>Statistique</h2>
+        </div>
+
+        <div class="flex-stat">
+        
+            <p id="coins-stat">Coins: 0</p>
+            <p id="multi-main">Par clique: 1</p>
+            <p id="total-click">Nombre total de clique: 0</p>
+        </div>
+
+    </div>
+
+    <div class="page-profil" id="page-profil">
+        <div class="top">
+            <h2>Bientôt disponible</h2>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+// copie
+
+let copie = 15000;
+let copieAdd = 500;
+let copieHave = 0;
+
+function Funcopie() {
+    if(Money >= copie) {
+        Money -= copie;
+        Multis += 2;
+        copie += copieAdd;
+        copieHave += 1;
+        refresh();
+    } else {
+        const alertDiv = document.getElementById('alertDiv');
+        alertDiv.classList.remove('hidden');
+        setTimeout(() => {
+            alertDiv.classList.add('hidden'); 
+        }, 3000);
+    } 
+}
+
+
+// copie
+    document.getElementById("copie-have").innerHTML = "Prix : " + formatNumber(copie);
+    document.getElementById("copie-have").innerHTML = "Vous en avez : " + formatNumber(copieHave);
+    
+
